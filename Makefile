@@ -47,7 +47,7 @@ all: prepare target
 	@echo "CC $<"
 
 target: prepare $(COBJS)
-	@$(CC) -o kconfig-mconf $(COBJS) $(LDFLAGS)
+	@$(CC) -o $(TARGET) $(COBJS) $(LDFLAGS)
 	@echo "Link $(TARGET)"
 
 clean:
